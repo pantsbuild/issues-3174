@@ -90,7 +90,7 @@ So there are 2 issues here:
 
 1. Modifying pants ivy bootstrapping to allow use of a different (or `None` / the default)
    `ivysettings.xml` for ivy classpath bootstrapping.
-2. The `ohnosequences.ivy.S3Resolver` resolver needs a wrapper class with a default constructor
+2. The [`ohnosequences.ivy.S3Resolver`](https://github.com/ohnosequences/ivy-s3-resolver/blob/master/src/main/java/ohnosequences/ivy/S3Resolver.java) resolver needs a wrapper class with a default constructor
    (and possibly other modifications) that can be instantiated by ivy and configured via
    `ivysettings.xml`.
 
