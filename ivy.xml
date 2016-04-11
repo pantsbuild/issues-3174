@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+Copyright 2016 Pants project contributors (see CONTRIBUTORS.md).
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+-->
+
+<ivy-module version="2.0"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+
+  <info organisation="org.pantsbuild" module="ivy"/>
+
+  <dependencies defaultconf="default">
+    <dependency org="org.apache.ivy" name="ivy" rev="2.4.0"/>
+
+    <!-- enable support for an s3 bucket resolver -->
+    <dependency org="co.actioniq.thirdparty.ohnosequences" name="ivy-s3-resolver" rev="0.8.0"/>
+  </dependencies>
+</ivy-module>
